@@ -1,4 +1,4 @@
-<p align="center"><img src="./img/ROS-noetic-logo.png" height="250" alt=" " /></p>
+<p align="center"><img src="./img/ROS-noetic-logo.jpg" height="250" alt=" " /></p>
 <h1 align="center"> ROS Noetic Install</h1> 
 <h4 align="right">Jun 23</h4>
 
@@ -60,7 +60,6 @@ source ~/.bashrc
 
 
 ```
-nota: Al ejecutarlo por primera vez en su espacio de trabajo, creará un enlace `CMakeLists.txt` en su carpeta 'src'.
 
 ## Initialize rosdep
 ```bash
@@ -73,17 +72,8 @@ rosdep update
 ```bash
 sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
 ```
+
 <br>
-<br>
-
-
-
-
-
-
-
-
-
 <br>
 
 ---
