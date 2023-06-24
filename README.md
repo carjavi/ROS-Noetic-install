@@ -52,7 +52,7 @@ catkin_make
 # Agregamos el espacio de trabajo al archivo .bashrc. para que ROS reconozca nuestro espacio de trabajo cada vez que usemos el terminal
 #echo /home/USUARIO/catkin_ws/devel/setup.bash >> ~/.bashrc, sino se debe correr source devel/setup.bash dentro del espacio de trabajo.
 echo -e "\n# carjavi ROS Workspace" >> ~/.bashrc
-echo source $HOME/catkin_ws/devel/setup.bash >> ~/.bashrc
+echo "source $HOME/catkin_ws/devel/setup.bash" >> ~/.bashrc
 
 # tambien se puede hacer desde GUI, en Home Ctrl + h muestra los archivos ocultos, abrimos el .bashrc y agregamos 
 # source ~/catkin_ws/devel/setup.bash
