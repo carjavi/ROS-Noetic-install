@@ -56,6 +56,8 @@ echo "source $HOME/catkin_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 # tambien se puede hacer desde GUI, en Home Ctrl + h muestra los archivos ocultos, abrimos el .bashrc y agregamos 
 # source ~/catkin_ws/devel/setup.bash
+# desde Home se actualiza el bashrc con:
+#$ source .bashrc
 
 
 ```
@@ -70,6 +72,30 @@ rosdep update
 # Dependencies for building packages
 ```bash
 sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
+```
+<br>
+<br>
+
+# Previous Applications in Ubuntu
+## Herramientas de red
+```
+sudo apt install net-tools
+```
+## Habilitar SSH Ubuntu 20.04
+```
+sudo apt update
+sudo apt install openssh-server
+sudo systemctl status ssh
+```
+Ubuntu viene con una herramienta de configuración de firewall llamada UFW. Si el firewall está habilitado en su sistema, asegúrese de abrir el puerto SSH:
+```
+sudo ufw allow ssh
+```
+Ahora que SSH está instalado y ejecutándose en su sistema Ubuntu
+
+## VScode
+```
+sudo snap install --classic code
 ```
 
 <br>
