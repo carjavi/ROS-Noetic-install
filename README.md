@@ -7,7 +7,7 @@
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
 
 <br>
-ROS Noetic install on Ubuntu 20.04
+ROS Noetic install on Ubuntu 20.04. Soporte hasta Mayo 2025.
 
 ## Steps
 Setup your computer to accept software from packages.ros.org.
@@ -53,7 +53,7 @@ catkin_make
 #echo /home/USUARIO/catkin_ws/devel/setup.bash >> ~/.bashrc, sino se debe correr source devel/setup.bash dentro del espacio de trabajo.
 echo -e "\n# carjavi ROS Workspace" >> ~/.bashrc
 echo "source $HOME/catkin_ws/devel/setup.bash" >> ~/.bashrc
-
+source ~/.bashrc
 # tambien se puede hacer desde GUI, en Home Ctrl + h muestra los archivos ocultos, abrimos el .bashrc y agregamos 
 # source ~/catkin_ws/devel/setup.bash
 
