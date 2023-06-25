@@ -44,9 +44,10 @@ Ejecute lo siguiente en un terminal (`Ctrl + Alt + T`).
 ```bash
 # añadira al final del archivo ~/.bashrc de nuestro sistema Linux la ruta de nuestro workspace
 source /opt/ros/noetic/setup.bash
+echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 
 # Crear workspace.
-mkdir -p ~/ros_ws/src && cd ~/catkin_ws/
+mkdir -p ~/catkin_ws/src && cd ~/catkin_ws/
 catkin_make
 
 # Agregamos el espacio de trabajo al archivo .bashrc. para que ROS reconozca nuestro espacio de trabajo cada vez que usemos el terminal
@@ -60,6 +61,11 @@ source ~/.bashrc
 #$ source .bashrc
 
 
+```
+
+## Install catkin build
+```
+sudo apt install python3-catkin-tools
 ```
 
 ## Initialize rosdep
@@ -76,7 +82,7 @@ sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator 
 <br>
 <br>
 
-# Previous Applications in Ubuntu
+# Prerequisites Ubuntu
 ## Herramientas de red
 ```
 sudo apt install net-tools
