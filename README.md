@@ -42,13 +42,15 @@ link: http://wiki.ros.org/noetic/Installation/Ubuntu
 Ejecute lo siguiente en un terminal (`Ctrl + Alt + T`). 
 
 ```bash
+# Create the catkin root and source folders
+mkdir -p ~/catkin_ws/src && cd ~/catkin_ws/
+#Configure the catkin workspace
+catkin_init_workspace
+
 # añadira al final del archivo ~/.bashrc de nuestro sistema Linux la ruta de nuestro workspace
 source /opt/ros/noetic/setup.bash
 echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 
-# Crear workspace.
-mkdir -p ~/catkin_ws/src && cd ~/catkin_ws/
-catkin_make
 
 # Agregamos el espacio de trabajo al archivo .bashrc. para que ROS reconozca nuestro espacio de trabajo cada vez que usemos el terminal
 #echo /home/USUARIO/catkin_ws/devel/setup.bash >> ~/.bashrc, sino se debe correr source devel/setup.bash dentro del espacio de trabajo.
@@ -60,7 +62,8 @@ source ~/.bashrc
 # desde Home se actualiza el bashrc con:
 #$ source .bashrc
 
-
+#Run catkin_make to compile your catkin workspace.
+catkin_make
 ```
 
 ## Install catkin build
