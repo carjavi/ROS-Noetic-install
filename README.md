@@ -47,14 +47,12 @@ mkdir -p ~/catkin_ws/src && cd ~/catkin_ws/
 #Configure the catkin workspace
 catkin_init_workspace
 
-# añadira al final del archivo ~/.bashrc de nuestro sistema Linux la ruta de nuestro workspace
 source /opt/ros/noetic/setup.bash
-echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 
-
-# Agregamos el espacio de trabajo al archivo .bashrc. para que ROS reconozca nuestro espacio de trabajo cada vez que usemos el terminal
+# añadira al final del archivo ~/.bashrc de nuestro sistema Linux la ruta de nuestro workspace
 #echo /home/USUARIO/catkin_ws/devel/setup.bash >> ~/.bashrc, sino se debe correr source devel/setup.bash dentro del espacio de trabajo.
 echo -e "\n# carjavi ROS Workspace" >> ~/.bashrc
+echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 echo "source $HOME/catkin_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 # tambien se puede hacer desde GUI, en Home Ctrl + h muestra los archivos ocultos, abrimos el .bashrc y agregamos 
